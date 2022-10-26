@@ -62,13 +62,33 @@ _Each of these videos will become a full screen background, shown in the order t
 ### Creating a new article for your video
 1. For each video, copy the _YourStory.vue_ inside the _vr-tickle/src/components/articles/_ folder and give it _ANameOfChoice.vue_. 
 2. Now in the _vr-tickle/src/components/MainContent.vue_ file, import your newly created _ANameOfChoice.vue_ files: _import _ANameOfChoice from "./articles/_ANameOfChoice.vue"_
-3. Subsequently, you can add your imported files inside the _<main>_ tag as follows _<ANameOfChoice />_. Note that the order here should match the order in  _vr-tickle/src/assets/video.json_
+3. Subsequently, you can add your imported files inside the _`<main>`_ tag as follows _`<ANameOfChoice />`_. Note that the order here should match the order in  _vr-tickle/src/assets/video.json_
   
 ### Designing your new page
-1. Inside the _<article>_ tag, new HTML element can be created containing the content of your webpage. Some relevant [HTML tags](https://www.w3schools.com/TAGS/default.asp) are listed below.
+1. Inside the _`<article>`_ tag, new HTML element can be created containing the content of your webpage. Some relevant [HTML tags](https://www.w3schools.com/TAGS/default.asp) are listed below.
   - `<h2>`   > Heading (2 defines the level of this heading in a hierarchy of headings)
   - `<p>`    > A paragraph
   - `<div>`  > Not visual, but is contains other objects in order to group them and give them a for example a common background 
-2. Inside the _<style>_ tag, you can style your elements. In order to do this, you need to target them using [CSS selectors](https://www.w3schools.com/CSSref/css_selectors.php). CSS offers many ways to style element. Start with a design and we can discuss the implementation!
+2. Inside the _`<style>`_ tag, you can style your elements. In order to do this, you need to target them using [CSS selectors](https://www.w3schools.com/CSSref/css_selectors.php). CSS offers many ways to style element. Start with a design and we can discuss the implementation!
 
-_Note that if you want to achieve advanced tasks, you can use the <script> tag to execute JavaScript code_
+_Note that if you want to achieve advanced tasks, you can use the `<script>` tag to execute JavaScript code_
+
+## Manipulating your 360 video directly by adding 3D assets
+1. As shown in [this example](https://aframe.io/examples/showcase/anime-UI/) it is also possible to add graphics directly into the 3D world that contains your 360 video
+2. Create the assets that you want to import into the 3D world and put them in the _path-to-the-project/vr-tickle/public/_ folder
+3. In the _vr-tickle/src/components/VideoBackground.vue_ file you can now add these assets by adding them inside the _`<a-assets>`_ tag as follows _`<img id="glow1" src="/nameOfAssets.png">`_
+4. Then you can add this in your 3D world by adding it as a direct child of _`<a-scene>`_ as follows: 
+```
+<a-entity id="schematic-2" position="0 0 -6" scale="0.7 0.7 0.7">
+        <a-image mixin="image delayVisible" src="#glow1" scale="5 5 5" position="0 0 -2" event-set__loaded="_delay: 1500"></a-image>
+</a-entity>
+```
+5. When panning around in the 360 video, your image will show up
+6. The _position_ and _scale_ are defined as _x y z_ and can be manipulated as such
+
+---
+
+That was a lot of information, but you are given a lot of freedom, so let's use it! No idea is too ambitous, let's work some magic together :)
+
+Cheers,
+Abel
