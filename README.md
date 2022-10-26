@@ -2,12 +2,15 @@
 
 Hey! Thanks for joining the workshop! We are going to make some cool stuff today, or rather, _you_ are going to make some cool stuff today. I created a little guide to help you get started with the project for today. You will find this below. 
 
+## About the technology
+We are using [Vue.js](https://vuejs.org/) to create this web application. To show the 360 videos, we are using a framework called [A-Frame](https://aframe.io/), which is a 3D engine for the web. This 3D engine can run on VR glasses if that is something that you are into! 
+
 ## What to install before we start
 - [VS Code](https://code.visualstudio.com/) as a code editor + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) for syntax highlighting
 - [Git](https://git-scm.com/downloads) to get this code on your computer
 - [Node.js](https://nodejs.org/en/) to actually run the code
 
-## Getting started
+## Now for the code
 
 ### Clone the repository
 1. Copy the URL to this repository (HTTPS) 
