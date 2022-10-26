@@ -1,16 +1,34 @@
-# Vue 3 + TypeScript + Vite
+# 360 Workshop @ University of Applied Sciences in Volda
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Hey! Thanks for joining the workshop! We are going to make some cool stuff today, or rather, _you_ are going to make some cool stuff today. I created a little guide to help you get started with the project for today. You will find this below. 
 
-## Recommended IDE Setup
+## What to install before we start
+- [VS Code](https://code.visualstudio.com/) as a code editor + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) for syntax highlighting
+- [Git](https://git-scm.com/downloads) to get this code on your computer
+- [Node.js](https://nodejs.org/en/) to actually run the code
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Getting started
 
-## Type Support For `.vue` Imports in TS
+### Clone the repository
+1. Copy the URL to this repository (HTTPS) 
+<img src="https://user-images.githubusercontent.com/50890336/197995437-e27d2812-3ded-45b0-b63d-f444889719ec.png" width="400" />
+2. Open VS Code
+3. Hit Ctrl + Shift + P
+4. Click _Clone from GitHub_
+5. Sign in to GitHub
+6. Now paste the link that you copied in step 1
+<img src="https://user-images.githubusercontent.com/50890336/197997076-ba9696b6-5e78-486b-bc99-2d7929f7a2e9.png" width="600" />
+7. Select a folder to put the code in, hit _Open_ and _Yes, I trust the authors_ (trust me :))
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+### Install & Run the program
+1. On the top, click _Terminal_ > _New Terminal_
+2. Run the command _npm i_, which installs the necessary packages to run the program
+3. Run _npm run dev_ to run the program
+<img src="https://user-images.githubusercontent.com/50890336/197997913-94426212-c513-4aa2-9c33-864f74304f8d.png" width="250" />
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
-
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+### Open the program
+1. Open a web browser
+2. Navigate to [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
+3. Hurrah! We managed to run the app!
+<img src="https://user-images.githubusercontent.com/50890336/197998489-6fc27052-d508-495e-bdc9-8a6f69453690.png" width="500" />
+4. Scroll and pan around. Let's see what we are working with!
