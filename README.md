@@ -37,6 +37,7 @@ We are using [Vue.js](https://vuejs.org/) to create this web application. To sho
 2. Navigate to [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
 3. Hurrah! We managed to run the app!
 <img src="https://user-images.githubusercontent.com/50890336/197998489-6fc27052-d508-495e-bdc9-8a6f69453690.png" width="500" />
+
 4. Scroll and pan around. Let's see what we are working with!
 
 ## Use your 360 videos
@@ -47,6 +48,7 @@ We are using [Vue.js](https://vuejs.org/) to create this web application. To sho
 <img src="https://user-images.githubusercontent.com/50890336/198026918-55917142-7e8f-4fbb-89c4-d54f584ca130.png" width="350" />
 3. Select 360 view (the eye icon on top) and change the field of view (FOV) to the right-most icon, as shown below
 <img src="https://user-images.githubusercontent.com/50890336/198027516-9735f6df-3264-4e2d-8a27-6f438bb7197d.png" width="550" />
+
 4. Now hit _File_ > _Export_
 5. Select _Export 360 video_ on top and dial back the resolution, such that you do not blow up your computer :)
 <img src="https://user-images.githubusercontent.com/50890336/198027888-974317f1-2a37-4b39-82d7-bf0c3035c2db.png" width="350" />
@@ -55,6 +57,7 @@ We are using [Vue.js](https://vuejs.org/) to create this web application. To sho
 1. Copy you videos into the _path-to-the-project/vr-tickle/public/_ folder
 2. Open the folder in Visual Studio Code and open the _vr-tickle/src/assets/video.json_ file
 <img src="https://user-images.githubusercontent.com/50890336/198029529-29167e24-6446-4bad-b97c-1748dff391df.png" width="400" />
+
 3. Replace the _name_ and _fname_ (file name) with values corresponding to your video files (the name is arbitrary and can be whatever!)
 
 _Each of these videos will become a full screen background, shown in the order they are defined in this file. In order for your videos to show, you need to create a corresponding article on your webpage. Keep reading..._
